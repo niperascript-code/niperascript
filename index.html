@@ -570,6 +570,54 @@
     }
     .share-btn:hover::after { opacity: 1; }
 
+    /* DONATION */
+    .donation-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(26,20,16,0.1);
+    }
+    .donation-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .donation-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .donation-text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 40ch;
+      text-align: center;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .donation-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--paper);
+      background: var(--accent);
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      border: 1px solid var(--accent);
+      transition: background 0.25s, border-color 0.25s;
+      margin-top: 0.4rem;
+    }
+    .donation-btn:hover { background: #9e4d22; border-color: #9e4d22; }
+    .donation-heart { font-size: 1rem; }
+
     /* FOOTER */
     footer {
       background: var(--ink);
@@ -873,6 +921,16 @@
           <span class="skill-tag">SRT</span>
         </div>
       </div>
+      <div class="skill-card reveal" data-num="05">
+        <div class="skill-icon">📋</div>
+        <h3 data-en="Data Entry &amp; Document Processing" data-id="Entri Data &amp; Pemrosesan Dokumen" data-jp="データ入力・文書処理">Data Entry &amp; Document Processing</h3>
+        <p data-en="Meticulous data entry and document processing with high accuracy — from spreadsheets and forms to structured databases and digital archives." data-id="Entri data dan pemrosesan dokumen dengan akurasi tinggi — dari spreadsheet dan formulir hingga basis data terstruktur dan arsip digital." data-jp="スプレッドシートやフォームから構造化データベース・デジタルアーカイブまで、高精度なデータ入力と文書処理に対応。">Meticulous data entry and document processing with high accuracy — from spreadsheets and forms to structured databases and digital archives.</p>
+        <div class="skill-tags">
+          <span class="skill-tag" data-en="Spreadsheets" data-id="Spreadsheet" data-jp="表計算">Spreadsheets</span>
+          <span class="skill-tag" data-en="Forms &amp; Surveys" data-id="Formulir &amp; Survei" data-jp="フォーム">Forms &amp; Surveys</span>
+          <span class="skill-tag" data-en="Digital Archives" data-id="Arsip Digital" data-jp="デジタルアーカイブ">Digital Archives</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -918,6 +976,13 @@
         <h3 data-en="Manga Fan Translation" data-id="Terjemahan Manga Fan" data-jp="マンガ翻訳">Manga Fan Translation</h3>
         <p data-en="Japanese manga translated to Indonesian, preserving character voice, humor, and onomatopoeia." data-id="Manga Jepang diterjemahkan ke Bahasa Indonesia dengan mempertahankan suara karakter, humor, dan onomatopoeia." data-jp="日本語マンガをインドネシア語に翻訳。キャラクターの個性・ユーモア・擬音語を忠実に再現。">Japanese manga translated to Indonesian, preserving character voice, humor, and onomatopoeia.</p>
         <div class="work-langs"><span class="work-lang">JP &rarr; ID</span></div>
+        <span class="work-arrow">&#8599;</span>
+      </div>
+      <div class="work-card reveal" onclick="window.open('https://drive.google.com/drive/folders/13GM0uA81wOBYJaZdO0dRJMdUguOWaK_D?usp=sharing','_blank')" style="cursor:pointer;">
+        <div class="work-type" data-en="Data Entry · Document Processing" data-id="Entri Data · Pemrosesan Dokumen" data-jp="データ入力・文書処理">Data Entry · Document Processing</div>
+        <h3 data-en="Data Entry Work Samples" data-id="Sampel Pekerjaan Entri Data" data-jp="データ入力作業サンプル">Data Entry Work Samples</h3>
+        <p data-en="Structured data entry samples demonstrating accuracy, consistency, and attention to detail across spreadsheets, forms, and document digitization." data-id="Sampel entri data terstruktur yang menunjukkan akurasi, konsistensi, dan perhatian pada detail dalam spreadsheet, formulir, dan digitalisasi dokumen." data-jp="スプレッドシート・フォーム・文書のデジタル化における正確さ・一貫性・細部へのこだわりを示すデータ入力作業サンプル。">Structured data entry samples demonstrating accuracy, consistency, and attention to detail across spreadsheets, forms, and document digitization.</p>
+        <div class="work-langs"><span class="work-lang">ID</span><span class="work-lang">EN</span></div>
         <span class="work-arrow">&#8599;</span>
       </div>
     </div>
@@ -1021,7 +1086,23 @@
         <a href="https://www.upwork.com/freelancers/~016df1ac80b4a31c18?viewMode=1" class="contact-link">Upwork</a>
       </div>
 
-      <!-- SHARE BUTTONS -->
+      <!-- DONATION -->
+      <div class="donation-section">
+        <div class="donation-inner">
+          <div class="donation-label" data-en="Support My Work" data-id="Dukung Pekerjaan Saya" data-jp="活動を応援する">Support My Work</div>
+          <p class="donation-text" data-en="If my work has been helpful to you, a small contribution goes a long way in keeping this going. Thank you for your kindness 🙏" data-id="Jika pekerjaan saya bermanfaat bagi Anda, kontribusi kecil sangat berarti untuk keberlangsungan ini. Terima kasih atas kebaikan Anda 🙏" data-jp="もし私の仕事がお役に立てたなら、少しのご支援が活動の継続に大きな力となります。温かいお気持ちに感謝します🙏">If my work has been helpful to you, a small contribution goes a long way in keeping this going. Thank you for your kindness 🙏</p>
+          <a class="donation-btn" href="https://trakteer.id/niperascript" target="_blank" rel="noopener">
+            <span class="donation-heart">♥</span>
+            <span data-en="Buy Me a Coffee" data-id="Traktir Saya Kopi" data-jp="コーヒーをおごる">Buy Me a Coffee</span>
+          </a>
+          <a class="donation-btn" href="https://ko-fi.com/niperascript" target="_blank" rel="noopener" style="background:#29abe0; border-color:#29abe0; margin-top:0.75rem;">
+            <span class="donation-heart">☕</span>
+            <span data-en="Support on Ko-fi" data-id="Dukung di Ko-fi" data-jp="Ko-fiで支援する">Support on Ko-fi</span>
+          </a>
+        </div>
+      </div>
+
+
       <div class="share-section">
         <div class="share-label" data-en="Share this page" data-id="Bagikan halaman ini" data-jp="このページをシェア">Share this page</div>
         <div class="share-buttons">
@@ -1052,7 +1133,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <span id="footer-text">&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Translator &middot; Localizer &middot; Proofreader &middot; Yogyakarta, Indonesia</span>
+    <span id="footer-text">&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Translator &middot; Localizer &middot; Proofreader &middot; Data Entry &middot; Yogyakarta, Indonesia</span>
     <div style="margin-top:0.6rem; font-size:0.6rem; opacity:0.5;" data-en="Not a sworn/certified translator. Services are not suitable for documents requiring notarization." data-id="Bukan penerjemah tersumpah. Layanan tidak cocok untuk dokumen yang memerlukan notarisasi." data-jp="宣誓翻訳者ではありません。公証が必要な文書には対応しておりません。">Not a sworn/certified translator. Services are not suitable for documents requiring notarization.</div>
   </footer>
 
@@ -1075,11 +1156,11 @@
       // Footer special case
       const ft = document.getElementById('footer-text');
       if (lang === 'en') {
-        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Translator &middot; Localizer &middot; Proofreader &middot; Yogyakarta, Indonesia';
+        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Translator &middot; Localizer &middot; Proofreader &middot; Data Entry &middot; Yogyakarta, Indonesia';
       } else if (lang === 'jp') {
-        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; 翻訳者 &middot; ローカライザー &middot; 校正者 &middot; ジョグジャカルタ、インドネシア';
+        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; 翻訳者 &middot; ローカライザー &middot; 校正者 &middot; データ入力 &middot; ジョグジャカルタ、インドネシア';
       } else {
-        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Penerjemah &middot; Lokalisator &middot; Proofreader &middot; Yogyakarta, Indonesia';
+        ft.innerHTML = '&#169; 2026 <span class="ft-accent">Nipera Script</span> &middot; Penerjemah &middot; Lokalisator &middot; Proofreader &middot; Entri Data &middot; Yogyakarta, Indonesia';
       }
 
       document.documentElement.lang = lang;
